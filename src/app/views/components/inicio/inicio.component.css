@@ -1,0 +1,10 @@
+.parent-container {
+  height: 400px; /* ajuste conforme necessário para a altura desejada da div pai */
+}
+
+.background-container {
+  background: url("../../../../assets/background.svg") no-repeat center center
+    fixed;
+  background-size: cover;
+  height: 100%;
+}

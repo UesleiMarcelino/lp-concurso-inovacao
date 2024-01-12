@@ -1,0 +1,77 @@
+<!-- inscricao.component.html -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <h1>Formulário de Inscrição</h1>
+
+      <form [formGroup]="inscricaoForm" (ngSubmit)="inscrever()">
+
+        <div class="row">
+          <!-- Nome e Sobrenome em uma linha -->
+          <div class="col-md-6 mb-3">
+            <label for="nome" class="form-label">Nome:</label>
+            <input type="text" id="nome" name="nome" class="form-control" formControlName="nome">
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label for="sobrenome" class="form-label">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome" class="form-control" formControlName="sobrenome">
+          </div>
+        </div>
+
+        <!-- Email, Telefone, CEP em uma linha -->
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" id="email" name="email" class="form-control" formControlName="email">
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <label for="telefone" class="form-label">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" class="form-control" formControlName="telefone">
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <label for="cep" class="form-label">CEP:</label>
+            <input type="text" id="cep" name="cep" class="form-control" formControlName="cep">
+          </div>
+        </div>
+
+        <!-- Endereço, Bairro, Complemento em uma linha -->
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <label for="endereco" class="form-label">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" class="form-control" formControlName="endereco">
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <label for="bairro" class="form-label">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" class="form-control" formControlName="bairro">
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <label for="complemento" class="form-label">Complemento:</label>
+            <input type="text" id="complemento" name="complemento" class="form-control" formControlName="complemento">
+          </div>
+        </div>
+
+        <!-- Cidade, Estado em uma linha -->
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="cidade" class="form-label">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" class="form-control" formControlName="cidade">
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label for="estado" class="form-label">Estado:</label>
+            <input type="text" id="estado" name="estado" class="form-control" formControlName="estado">
+          </div>
+        </div>
+
+        <!-- Botão de Inscrever -->
+        <button type="submit" class="btn btn-primary" [disabled]="!inscricaoForm.valid">Inscrever</button>
+      </form>
+    </div>
+  </div>
+</div>
