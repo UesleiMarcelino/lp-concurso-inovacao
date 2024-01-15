@@ -1,3 +1,7 @@
 .desafios-container {
   margin-top: 20px; /* Espaçamento superior, ajuste conforme necessário */
 }
+
+.color-text {
+  color: #42c0b6;
+}
